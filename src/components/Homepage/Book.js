@@ -11,7 +11,7 @@ const Book = (props) => {
                 <CardImg top width="100%" src={imageUrl} alt={title} />
                 <CardBody>
                     <CardText>
-                        <strong>{${rating} / 5}</strong>
+                        <strong>{'${rating} / 5'}</strong>
                     </CardText>
                     <CardText>
                         {title}
@@ -26,7 +26,7 @@ const Book = (props) => {
                         <a target="_blank" href ={url} > Goodreads Link: </a>
                     </CardLink>
                     <CardLink>
-                        <Link to={/edit-book/${id}}>Edit Book</Link>
+                        <Link to={'/edit-book/${id}'}>Edit Book</Link>
                     </CardLink>
                 </CardBody>
             </StyledBookCard>
