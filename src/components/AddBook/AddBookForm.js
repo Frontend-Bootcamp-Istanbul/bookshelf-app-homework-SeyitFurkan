@@ -53,6 +53,7 @@ const AddBookForm = (props) => {
           handleBlur,
           handleSubmit,
           isSubmitting,
+          url
           /* and other goodies */
         }) => (
           <Form onSubmit={handleSubmit}>
@@ -132,6 +133,10 @@ const AddBookForm = (props) => {
                   {
                       errors.review && <FormFeedback>{errors.review}</FormFeedback>
                   }
+              </FormGroup>
+              <FormGroup>
+                <Label for="exampleUrl">Good Read Link</Label>
+                <Input type="url" name="url" id="url" value={values.url} onChange={handleChange} />
               </FormGroup>
               {
                   props.isEdit ?
